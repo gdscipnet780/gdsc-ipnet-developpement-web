@@ -8,6 +8,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    vertical-align: middle;
 }
 
 #logo{
@@ -17,11 +18,21 @@ nav{
 
 .liens{
     margin: 16px;
+    align-items: center;
+    justify-items: center;
 }
 
 .lien{
-    margin: 10px;
+    margin: 15px;
     text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.lien.active{
+    color: #630808;
 }
 
 header{
@@ -59,6 +70,7 @@ button{
 
 .text-description{
     font-size: 18px;
+    
 }
 
 main{
@@ -89,16 +101,19 @@ main{
     border: solid 2px black;
     border-radius: 52px;
     padding: 24px;
+    margin: 120px;
 }
 
 .plat-description{
     width: 120px;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 1em;
     margin: 0;
     padding: 0;
     justify-items: center;
     justify-content: center;
+    display: inline-block;
 }
 
 #plat-image-1,#plat-image-2,#plat-image-3{
@@ -112,4 +127,95 @@ main{
     font-size: 13px;
     font-weight: bold;
 
+}
+
+.badge{
+    background-color: #630808;
+    color: white;
+    border-radius: 100%;
+    position: relative;
+    left: 80%;
+    bottom: 5%;
+    width: 82px;
+    height: 82px;
+    padding: 5px;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    
+    
+}
+
+.devise{
+    padding-top: 15px;
+    padding-right: 10px;
+    font-size: 10px;
+    text-align: end;
+}
+
+.badge>span{
+    display: block;
+    align-self: center;
+    font-weight: bold;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #630808;
+    color: white;
+    padding: 30px;
+}
+
+#logo-pied-de-page{
+    width: 130px;
+    height: auto;
+}
+
+#instagram,#whatsapp{
+    width: 30px;
+    height: auto;
+
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+#nom-prenom,#message{
+    display: block;
+    background-color: #630808;
+    border: white solid 2px;
+    border-radius: 30px;
+    color: white;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+#message{
+    border-radius: 39px;
+    padding-top: 15px;
+}
+
+::placeholder{
+    color: white;
+    font-family: 'Poppins';
+}
+
+#submit-btn{
+    background-color: white;
+    font-weight: bold;
+    border-radius: 39px;
+    border: solid white;
+    color: #630808;
+    padding: 5px;
+    
+    margin: 15px;
+}
+
+.social{
+    padding-top: 100px;
 }
