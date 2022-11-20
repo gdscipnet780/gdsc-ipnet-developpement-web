@@ -82,6 +82,7 @@ main{
     color: #630808;
     padding: 0;
     margin: 0;
+    font-family: 'Carattere', cursive;
 }
 
 .sous-titre-section-carte{
@@ -114,6 +115,11 @@ main{
     justify-items: center;
     justify-content: center;
     display: inline-block;
+}
+
+.plat-titre{
+    font-family: 'Carattere', cursive;
+    font-size: 24px;
 }
 
 #plat-image-1,#plat-image-2,#plat-image-3{
